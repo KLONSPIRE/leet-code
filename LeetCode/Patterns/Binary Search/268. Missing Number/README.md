@@ -1,6 +1,6 @@
 # 📝 268. Missing Number (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/missing-number/?envType=problem-list-v2&envId=hash-table)
+🔗 [Problem Link](https://leetcode.com/problems/missing-number/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
@@ -8,8 +8,8 @@
 Array, Hash Table, Math, Binary Search, Bit Manipulation, Sorting
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 17 ms
+- **Memory:** 28.1 MB
 
 ---
 
