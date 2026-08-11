@@ -8,9 +8,8 @@ public:
                 n[nums[i]]++;            }
 
         for(i = 1; i <= nums.size(); i++)
-            if(n[i] == 0){
+            if(n[i] == 0)
                 ans.push_back(i);
-            }
         
         return ans;
     }
