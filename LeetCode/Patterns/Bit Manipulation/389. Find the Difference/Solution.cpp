@@ -8,10 +8,10 @@ public:
             c[t[i]]++;
         }
         c[t[i]]++;
-
         for(i = 0; i < t.length(); i++)
-            if(c[t[i]] == 1)
+            if(c[t[i]] % 2 != 0){
                 return t[i];
+            }
 
         return ' ';
     }
