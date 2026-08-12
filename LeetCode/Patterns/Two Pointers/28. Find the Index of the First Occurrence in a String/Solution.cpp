@@ -1,6 +1,7 @@
 class Solution {
 public:
     int strStr(string haystack, string needle) {
+        if
         int i, j;
         for(i = 0; i <= haystack.length() - needle.length(); i++){
             if(haystack[i] == needle[0] && haystack[i+needle.size() - 1] == needle[needle.size() - 1]){
