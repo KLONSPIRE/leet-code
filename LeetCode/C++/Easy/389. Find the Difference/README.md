@@ -1,6 +1,6 @@
 # 📝 389. Find the Difference (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/find-the-difference/?envType=study-plan-v2&envId=programming-skills)
+🔗 [Problem Link](https://leetcode.com/problems/find-the-difference/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
