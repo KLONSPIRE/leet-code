@@ -4,9 +4,8 @@ public:
         if(s.size() != t.size())
             return 0;
         unordered_map<char, int> c;
-        for(int i = 0; i < s.size(); i++){
-            c[s[i]]++;
-            c[t[i]]++;
+        for(int i = 0; i < 26; i++){
+            c[char('' + i)] = 0;
         }
 
         for(int i = 0; i < s.size(); i++)
