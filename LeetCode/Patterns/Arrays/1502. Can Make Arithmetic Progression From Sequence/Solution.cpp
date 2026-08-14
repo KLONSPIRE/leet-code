@@ -11,9 +11,9 @@ public:
                 high = arr[i];
         }
 
-        if((high - low)%(arr.size()-1) != 0)
+        if((high - low)%(arr.size()-1) != 0 )
             return false;
-            
+
         int d = (high - low)/(arr.size()-1);
         for(int i = 1; i < arr.size(); i++)
             if((arr[i] - arr[0]) % d != 0)
