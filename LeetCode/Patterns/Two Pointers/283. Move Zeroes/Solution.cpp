@@ -5,7 +5,8 @@ public:
         for(int i = 0; i < nums.size(); i++){
             if(nums[i] != 0){
                 s++;
-                swap(nums[i], nums[s]);
+                if(i != s)
+                    swap(nums[i], nums[s]);
                 }
         }
     }
