@@ -13,10 +13,10 @@ public:
 
         if((high - low)%(arr.size()-1) != 0)
             return false;
-            
+
         int d = (high - low)/(arr.size()-1);
         for(int i = 1; i < arr.size(); i++)
-            if((arr[i] - arr[0]) % d != 0)
+            if(d == 0 || (arr[i] - arr[0]) % d != 0)
                 return false;
 
         return true;
