@@ -12,7 +12,7 @@ public:
             sum += arr[i];
         }
 
-        if((high - low)%(arr.size()-1) != 0 || arr.size()*(high - low) % 2 != 0)
+        if((high - low)%(arr.size()-1) != 0)
             return false;
 
         int d = (high - low)/(arr.size()-1);
