@@ -1,6 +1,6 @@
 # 📝 1502. Can Make Arithmetic Progression From Sequence (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/solutions/3602439/pythonjavacsimple-solutionsorting-withou-xa2w/?envType=study-plan-v2&envId=programming-skills)
+🔗 [Problem Link](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/solutions/7370163/the-fastest-solution-with-on-complexity-6o7kh/?envType=study-plan-v2&envId=programming-skills)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
