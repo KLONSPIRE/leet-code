@@ -7,7 +7,7 @@ public:
         if(digits[digits.size() - 1] == 10){
             digits[digits.size() - 1] = 0;
             carry = 1;
-            for(int i = digits.size() - 2; i >= 0; i++){
+            for(int i = digits.size() - 2; i >= 0; i--){
                 if(digits[i] == 9 && carry == 1)
                     digits[i] = 0;
                 else if(carry == 1){
