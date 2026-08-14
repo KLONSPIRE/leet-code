@@ -15,8 +15,10 @@ public:
             return false;
 
         int d = (high - low)/(arr.size()-1);
+        if(d==0)
+            return true;
         for(int i = 1; i < arr.size(); i++)
-            if(d == 0 || (arr[i] - arr[0]) % d != 0)
+            if((arr[i] - arr[0]) % d != 0)
                 return false;
 
         return true;
