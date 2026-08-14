@@ -1,6 +1,6 @@
 # 📝 66. Plus One (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/plus-one/)
+🔗 [Problem Link](https://leetcode.com/problems/plus-one/?envType=study-plan-v2&envId=programming-skills)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
