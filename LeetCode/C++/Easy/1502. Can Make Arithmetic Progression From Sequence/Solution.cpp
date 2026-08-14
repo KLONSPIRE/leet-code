@@ -19,9 +19,9 @@ public:
         if(d==0)
             return true;
         
-        if(sum != 1LL * arr.size() * (low + high) / 2)
+        if(sum != 1LL * (long long)(arr.size()) * (low + high) / 2)
             return false;
-
+cout << low << " " << high << " " << d << " " << sum << endl;
         for(int i = 0; i < arr.size(); i++)
             if((arr[i] - low) % d != 0)
                 return false;
