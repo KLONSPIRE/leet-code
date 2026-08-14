@@ -1,6 +1,6 @@
 # 📝 1502. Can Make Arithmetic Progression From Sequence (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/?envType=study-plan-v2&envId=programming-skills)
+🔗 [Problem Link](https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/solutions/?envType=study-plan-v2&envId=programming-skills)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
@@ -8,7 +8,7 @@
 Array, Sorting
 
 ### 🚀 Performance
-- **Runtime:** N/A
+- **Runtime:** Successfully Evaluated
 - **Memory:** N/A
 
 ---
