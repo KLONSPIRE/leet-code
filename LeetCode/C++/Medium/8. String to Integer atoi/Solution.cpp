@@ -18,7 +18,15 @@ public:
             else
                 break;
 
+         ans *= sign;
 
-        return ans*sign;
+        // Clamp to int range
+        if (ans > INT_MAX)
+            return INT_MAX;
+
+        if (ans < INT_MIN)
+            return INT_MIN;
+
+        return ans;
     }
 };
