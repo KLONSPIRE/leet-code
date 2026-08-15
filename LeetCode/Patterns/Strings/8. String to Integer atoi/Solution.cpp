@@ -20,7 +20,6 @@ public:
 
          ans *= sign;
 
-        // Clamp to int range
         if (ans > INT_MAX)
             return INT_MAX;
 
