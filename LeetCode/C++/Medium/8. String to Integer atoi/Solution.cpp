@@ -1,7 +1,7 @@
 class Solution {
 public:
     int myAtoi(string s) {
-        int ans = 0,
+        long ans = 0;
         int sign = 1;
         bool nozero = true;
         for(int i = 0; i < s.size(); i++)
