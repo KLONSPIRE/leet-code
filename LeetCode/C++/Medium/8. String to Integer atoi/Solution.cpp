@@ -13,7 +13,7 @@ public:
                 nozero = false;
             else if(s[i] == '-' && nozero == true)
                 sign *= -1;
-            else if(s[i] == ' ' && ans == 0)
+            else if((s[i] == ' ' ||s[i] == '+')&& ans == 0)
                 continue;
             else
                 break;
