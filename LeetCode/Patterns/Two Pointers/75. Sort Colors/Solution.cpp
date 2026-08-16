@@ -5,12 +5,18 @@ public:
         for(int i : nums)
             count[i]++;
 
-        int i;
-        for(i = 0; i < count[0]; i++)
+        int i = 0;
+        while(i < count[0]){
             nums[i] = 0;
-        for(i = count[0]; i < count[0] + count[1]; i++)
+            i++;
+        }
+        while(i < count[0] + count[1]){
             nums[i] = 1;
-        for(i = count[0] + count[1]; i < count[0] + count[1] + count[2]; i++)
+            i++;
+        }
+        while(i < count[0] + count[1] + count[2]){
             nums[i] = 2;
+            i++;
+        }
     }
 };
