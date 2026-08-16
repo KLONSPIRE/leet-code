@@ -1,8 +1,14 @@
 class Solution {
 public:
     void rotate(vector<int>& nums, int k) {
-        for(int i = 0; i < k; i++)
-            for(int j = 0; j < nums.size() - 1; j++)
-                swap(nums[nums.size() - 1], nums[j]);
+        vector<int> ans;
+        for(int i = nums.size() - k%nums.size(); i < nums.size(); i++)
+            ans.push_back(nums[i]);
+        for(int i = 0; i < nums.size() - k%nums.size(); i++){
+            ans.push_back(nums[i]);
+            nums[i] = ans[i];
+        }
+        for(int i = nums.size() - k%nums.size(); i < nums.size(); i++)
+            nums[i] = ans[i];
     }
 };
