@@ -11,8 +11,10 @@ public:
             }
             else if(s[i] == '0' && ans == 0)
                 nosign = false;
-            else if(s[i] == '-' && nosign == true)
+            else if(s[i] == '-' && nosign == true){
                 sign *= -1;
+                nosign = false;
+            }
             else if(s[i] == ' ' && ans == 0)
                 continue;
             else if(s[i] == '+' && nosign == true)
