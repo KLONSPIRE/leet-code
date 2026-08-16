@@ -7,7 +7,7 @@ public:
 
         for (int i = 0; i < s.size(); i++) {
             if(s[i] >= '0' && s[i] <= '9') {
-                if (ans > (INT_MAX - s[i] - '0') / 10)
+                if (ans > (INT_MAX - (s[i] - '0')) / 10)
                     return sign == 1 ? INT_MAX : INT_MIN;
                 ans *= 10;
                 ans += s[i] - '0';
