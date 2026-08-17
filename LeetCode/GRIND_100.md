@@ -3,7 +3,7 @@
 Track your progress on the Grind 100 coding interview preparation list.
 
 ## Progress
-- **Completed:** 8 / 100 (8.0%)
+- **Completed:** 9 / 100 (9.0%)
 
 ---
 
@@ -43,7 +43,7 @@ Track your progress on the Grind 100 coding interview preparation list.
 
 ### 📂 Linked List
 - [ ] Reverse Linked List
-- [ ] Palindrome Linked List
+- [x] [Palindrome Linked List](./C++/Easy/234. Palindrome Linked List/)
 - [ ] Linked List Cycle
 - [ ] Linked List Cycle II
 - [ ] Merge Two Sorted Lists
