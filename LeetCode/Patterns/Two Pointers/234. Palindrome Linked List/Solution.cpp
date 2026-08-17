@@ -12,21 +12,16 @@ class Solution {
 public:
     bool isPalindrome(ListNode* head) {
         ListNode* temp = head;
-        stack<int> rev;
+        vector<int> rev;
 
         while(temp != nullptr){
-            rev.push(temp -> val);
+            rev.push_back(temp -> val);
             temp = temp -> next;
         }
 
-        temp = head;
-
-        while(temp != nullptr){
-            if(temp -> val != rev.top())
+        for(int i = 0; i < rev.size()/2; i++)
+            if(rev[i] != rev[rev.size()-i-1])
                 return false;
-            temp = temp -> next;
-            rev.pop();
-        }
 
         return true;
     }
