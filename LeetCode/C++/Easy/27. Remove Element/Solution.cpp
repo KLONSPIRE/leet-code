@@ -9,9 +9,6 @@ public:
                 pos++;
             }
 
-        for(int i = pos; i < nums.size(); i++)
-            nums.pop_back();
-
         return pos;
     }
 };
