@@ -5,11 +5,11 @@ public:
         string ans = "";
         int i = a.size() - 1, j = b.size() - 1;
         while(i >= 0 || j >= 0){
-            if(i < a.size()){
+            if(i >= 0){
                 carry += int(a[i] - '0');
                 i--;
             }
-            if(j < b.size()){
+            if(j >= 0){
                 carry += int(b[j] - '0');
                 j--;
             }
