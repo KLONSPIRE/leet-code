@@ -1,19 +1,17 @@
 class Solution {
 public:
     string addBinary(string a, string b) {
-        reverse(a.begin(), a.end());
-        reverse(b.begin(), b.end());
         int carry = 0;
         string ans = "";
-        int i = 0, j = 0;
-        while(i < a.size() || j < b.size()){
+        int i = a.size() - 1, j = b.size() - 1;
+        while(i >= 0 || j >= 0){
             if(i < a.size()){
                 carry += int(a[i] - '0');
-                i++;
+                i--;
             }
             if(j < b.size()){
                 carry += int(b[j] - '0');
-                j++;
+                j--;
             }
             ans.push_back(char((carry % 2) + '0'));
             carry /= 2;
