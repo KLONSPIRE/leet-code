@@ -7,13 +7,11 @@ public:
             x += int(a[i] - '0')*pow(2, pos);
             pos++;
         }
-        cout << x << endl;
         pos = 0;
         for(int i = b.size() - 1; i >= 0; i--){
             y += int(b[i] - '0')*pow(2, pos);
             pos++;
         }
-        cout << y << endl;
         x += y;
         string ans = "";
         while(x > 1){
