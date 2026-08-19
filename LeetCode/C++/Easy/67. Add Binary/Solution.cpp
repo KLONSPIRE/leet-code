@@ -15,7 +15,6 @@ public:
             }
             ans.push_back(char((carry % 2) + '0'));
             carry /= 2;
-            cout << carry << endl;
         }
         if(carry != 0)
             ans.push_back(char(carry + '0'));
