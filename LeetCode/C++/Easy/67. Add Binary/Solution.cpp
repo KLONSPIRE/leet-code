@@ -1,7 +1,7 @@
 class Solution {
 public:
     string addBinary(string a, string b) {
-        long lo x = 0, y = 0;
+        long long x = 0, y = 0;
         int pos = 0;
         for(int i = a.size() - 1; i >= 0; i--){
             x += int(a[i] - '0')*pow(2, pos);
