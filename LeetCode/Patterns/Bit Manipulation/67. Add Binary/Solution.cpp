@@ -1,32 +1,39 @@
 class Solution {
 public:
     string addBinary(string a, string b) {
-        long long x = 0, y = 0;
-        int pos = 0;
-        for(int i = a.size() - 1; i >= 0; i--){
-            x += int(a[i] - '0')*pow(2, pos);
-            pos++;
-        }
-        pos = 0;
-        for(int i = b.size() - 1; i >= 0; i--){
-            y += int(b[i] - '0')*pow(2, pos);
-            pos++;
-        }
-        x += y;
+        int carry = 0;
+        int n1 = a.size() < b.size() ? a.size() : b.size();
         string ans = "";
-        while(x > 1){
-            ans.push_back(char(x % 2 + '0'));
-            x /= 2;
+        int temp;
+        for(int i = 0; i < n1; i++){
+            temp = int(a[i] - '0') + int(b[i] - '0') + carry;
+            if(temp == 3){
+                ans.push_back('1');
+                carry = 1;
+            }
+            else if(temp == 2){
+                ans.push_back('0');
+                carry = 1;
+            }
+            else if(temp == 1){
+                ans.push_back('1');
+                carry = 0;
+            }
+            else
+                ans.push_back('0');
         }
-        if(x != 0)
-            ans.push_back('1');
+
+        if(n1 == a.size())
+            n2 = b.size();
         else
-            ans.push_back('0');
-        for(int i = 0; i < ans.size()/2; i++){
-            char temp = ans[i];
-            ans[i] = ans[ans.size() - 1 - i];
-            ans[ans.size() - 1 - i] = temp;
-        }
+            n2 = a.size();
+
+        for(int i = n1; i < n2; i++)
+        if(carry == 1)
+            ans.push_back('1');
+        
+        reverse(ans.begin(), ans.end());
+
         return ans;
     }
 };
