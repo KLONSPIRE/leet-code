@@ -1,39 +1,28 @@
 class Solution {
 public:
     string addBinary(string a, string b) {
+        reverse(a.begin(), a.end());
+        reverse(b.begin(), b.end());
         int carry = 0;
-        int n1 = a.size() < b.size() ? a.size() : b.size();
         string ans = "";
-        int temp;
-        for(int i = 0; i < n1; i++){
-            temp = int(a[i] - '0') + int(b[i] - '0') + carry;
-            if(temp == 3){
-                ans.push_back('1');
-                carry = 1;
+        int i = 0, j = 0;
+        while(i < a.size() || j < b.size()){
+            if(i < a.size()){
+                carry += int(a[i] - '0');
+                i++;
             }
-            else if(temp == 2){
-                ans.push_back('0');
-                carry = 1;
+            if(j < b.size()){
+                carry += int(b[j] - '0');
+                j++;
             }
-            else if(temp == 1){
-                ans.push_back('1');
-                carry = 0;
-            }
-            else
-                ans.push_back('0');
+            ans.push_back(char((carry % 2) + '0'));
+            carry /= 2;
+            cout << carry << endl;
         }
+        if(carry != 0)
+            ans.push_back(char(carry + '0'));
 
-        if(n1 == a.size())
-            n2 = b.size();
-        else
-            n2 = a.size();
-
-        for(int i = n1; i < n2; i++)
-        if(carry == 1)
-            ans.push_back('1');
-        
         reverse(ans.begin(), ans.end());
-
         return ans;
     }
 };
