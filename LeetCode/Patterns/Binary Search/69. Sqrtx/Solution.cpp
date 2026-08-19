@@ -1,10 +1,16 @@
 class Solution {
 public:
     int mySqrt(int x) {
-        unsigned int i = 0;
-        while(i * i <= x){
-            i++;
+        long long beg = 0, end = x, mid;
+        while(beg <= end){
+            mid = beg + (end - beg)/2;
+            if(mid * mid == x)
+                return mid;
+            else if(mid * mid < x)
+                beg = mid + 1;
+            else
+                end = mid - 1;
         }
-        return i-1;
+        return beg-1;
     }
 };
