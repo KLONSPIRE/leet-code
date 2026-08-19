@@ -8,8 +8,8 @@
 Math, String, Bit Manipulation, Simulation
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 24 ms
+- **Memory:** 9.1 MB
 
 ---
 
