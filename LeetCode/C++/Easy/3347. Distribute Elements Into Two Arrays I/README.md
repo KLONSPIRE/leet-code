@@ -8,8 +8,8 @@
 Array, Simulation
 
 ### 🚀 Performance
-- **Runtime:** 3 ms
-- **Memory:** 23.8 MB
+- **Runtime:** N/A
+- **Memory:** N/A
 
 ---
 
