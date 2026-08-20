@@ -1,6 +1,8 @@
 class Solution {
 public:
     string convert(string s, int numRows) {
+        if(numRows == 1)
+            return s;
         string str = "";
 
         for (int i = 1; i <= numRows; i++){
@@ -13,7 +15,7 @@ public:
                     j--;
                 if (j == i)
                     str.push_back(s[k]);
-                if (j == numRows && )
+                if (j == numRows)
                     lower = false;
                 else if (j == 1)
                     lower = true;
