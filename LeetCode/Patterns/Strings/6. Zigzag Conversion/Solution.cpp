@@ -5,6 +5,7 @@ public:
 
         for (int i = 1; i <= numRows; i++){
             int j = 0;
+            bool lower = true;
             for (int k = 0; k < s.size(); k++) {
                 if (lower == true)
                     j++;
