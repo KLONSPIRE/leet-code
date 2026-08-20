@@ -13,7 +13,7 @@ public:
                     j--;
                 if (j == i)
                     str.push_back(s[k]);
-                if (j == numRows)
+                if (j == numRows && )
                     lower = false;
                 else if (j == 1)
                     lower = true;
