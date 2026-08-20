@@ -5,15 +5,15 @@ public:
         int i = 0;
         a.push_back(nums[i++]);
         b.push_back(nums[i++]);
-        
+
         while(i < nums.size())
             if(a.back() > b.back())
             a.push_back(nums[i++]);
         else
             b.push_back(nums[i++]);
         
-        for(i = 0; i < b.size(); i++)
-            a.push_back(b[i]);
+        for(int i : b)
+            a.push_back(i);
         
         return a;
     }
