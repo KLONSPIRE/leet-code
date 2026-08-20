@@ -1,7 +1,6 @@
 class Solution {
 public:
     string convert(string s, int numRows) {
-        bool lower = true;
         string str = "";
 
         for (int i = 1; i <= numRows; i++){
