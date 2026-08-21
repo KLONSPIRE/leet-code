@@ -1,17 +1,8 @@
 class Solution {
 public:
     int fib(int n) {
-        int f1 = 0, f2 = 1;
-        if(n <= 0)
-            return 0;
-        else if(n == 1)
-            return 1;
-        else{
-            for(int i = 2; i <= n; i++){
-                f2 = f1 + f2;
-                f1 = f2 - f1;
-            }
-            return f2;
-        }
+        if(n == 0 || n == 1)
+            return n;
+        return fib(n - 1) + fib(n - 2);
     }
 };
