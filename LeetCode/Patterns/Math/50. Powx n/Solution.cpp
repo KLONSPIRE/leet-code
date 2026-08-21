@@ -6,7 +6,7 @@ public:
             return 1;
         
         if(N < 0)
-            return 1 / myPow(x, N*-1);
+            return 1 / myPow(x, N);
         
         double half = myPow(x, N/2);
         if(N % 2 == 0)
