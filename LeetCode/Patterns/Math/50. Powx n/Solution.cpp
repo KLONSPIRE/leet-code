@@ -5,7 +5,7 @@ public:
             return 1;
         
         if(n < 1)
-            return 1 / myPow(x, n*-1);
+            return 1 / myPow(x, (long long)n*-1);
         
         double half = myPow(x, n/2);
         if(n % 2 == 0)
