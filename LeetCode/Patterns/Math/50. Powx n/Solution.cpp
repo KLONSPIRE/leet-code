@@ -1,7 +1,8 @@
 class Solution {
 public:
     double myPow(double x, int n) {
-        if((long long)n == 0)
+        ;
+        if(n == 0)
             return 1;
         
         if(n < 0)
