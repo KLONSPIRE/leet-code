@@ -1,7 +1,8 @@
 class Solution {
 public:
-    int if(climbStairs(int n) {
-        
+    int climbStairs(int n) {
+        if(n == 1)
+            return 1;
         int dp[n];
         dp[0] = 1;
         dp[1] = 2;
