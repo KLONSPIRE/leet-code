@@ -11,6 +11,6 @@ public:
                 min = x;
         }
 
-        return (sum - max - min)/(salary.size() - 2);
+        return double(sum - max - min)/double(salary.size() - 2);
     }
 };
