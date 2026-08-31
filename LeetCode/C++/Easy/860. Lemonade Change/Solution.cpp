@@ -10,6 +10,7 @@ public:
                     break;
                 case 20:
                     bill[5]--;
+                    
                     bill[10]--;
                     break;
             }
