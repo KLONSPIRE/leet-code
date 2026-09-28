@@ -7,7 +7,6 @@ public:
             if(x == '('){
                 p.push(x);
                 c++;
-                cout << c << endl;
             }else if(x == ')'){
                 if(max < c)
                     max = c;
