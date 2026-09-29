@@ -15,7 +15,10 @@ public:
             ans++;
             dd -= dr;
         }
+        
+        if(neg == -1)
+            ans = -ans;
 
-        return ans * neg;
+        return ans;
     }
 };
