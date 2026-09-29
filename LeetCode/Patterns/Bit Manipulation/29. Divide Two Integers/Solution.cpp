@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int divide(int dd, int dr) {
+    int divide(long dd, long dr) {
         int neg = 1;
         if(dd < 0){
             dd = -dd;
