@@ -10,7 +10,7 @@ public:
             dr = -dr;
             neg = -neg;
         }
-        int ans = 0;
+        long ans = 0;
         while(dd - dr >= 0){
             ans++;
             dd -= dr;
