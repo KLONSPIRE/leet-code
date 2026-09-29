@@ -11,7 +11,7 @@ public:
             neg = -neg;
         }
         int ans = 0;
-        while(dd - dr > 0){
+        while(dd - dr >= 0){
             ans++;
             dd -= dr;
         }
