@@ -1,9 +1,9 @@
 class Solution {
 public:
     bool checkStraightLine(vector<vector<int>>& cd) {
-        if(cd[1][0] - cd[0][0] != 0){
+        if (cd[1][0] - cd[0][0] != 0){
 
-            float m = (cd[1][1] - cd[0][1])/(cd[1][0] - cd[0][0]);
+            float m = float(cd[1][1] - cd[0][1])/float(cd[1][0] - cd[0][0]);
             int c = cd[0][1] - m * cd[0][0];
 
             cout << m << endl << c;
