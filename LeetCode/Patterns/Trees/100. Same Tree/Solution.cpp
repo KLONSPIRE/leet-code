@@ -19,6 +19,7 @@ public:
             y.push_back(x -> val);
             inorder(x -> right, y);
         }
+        y.push_back(-1);
     }
 
     void preorder(TreeNode* x, vector<int>& y){
@@ -27,6 +28,7 @@ public:
             preorder(x -> left, y);
             preorder(x -> right, y);
         }
+        y.push_back(-1);
     }
     
     bool isSameTree(TreeNode* p, TreeNode* q) {
